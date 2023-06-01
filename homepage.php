@@ -52,7 +52,7 @@ if (isset($_SESSION["username"])) {
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Rooms</a></li>
+            <li><a href="#">Units</a></li>
             <li><a href="#">Gallery</a></li>
             <li>
                 <form method="post">

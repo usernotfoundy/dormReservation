@@ -1,0 +1,148 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for the modal container */
+.modal {
+    display: none;
+    /* Hide the modal by default */
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background */
+}
+
+/* Styles for the modal content */
+.modal-content {
+    background-color: #fff;
+    width: 350px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.modal-content>p {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Styles for the modal buttons */
+.modal-content button:last-child {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ff4f4f;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.modal-content button:first-child {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: none;
+    color: #616161;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.modal-content button:hover {
+    background-color: #d34646;
+}
+
+.modal-content button:first-child:hover {
+    background-color: #d3d3d3;
+}
+
+/* START OF HEADER AND NAV BAR */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav {
+    background-color: #fcfcfc;
+    display: flex;
+    padding: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>.logo>h1 {
+    color: #00588b;
+    font-size: 2rem;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>ul>li:first-child {
+    border-bottom: #00588b solid 0.15rem;
+    padding-bottom: 0.1rem;
+}
+
+nav>ul>li:last-child {
+    margin-left: 7rem;
+    background-color: #bbdaec;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+}
+
+nav>ul>li:last-child>form>button {
+    color: #00588b;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #bbdaec;
+    border: none;
+    cursor: pointer;
+}
+
+nav>ul>li:last-child>form>button>img {
+    height: 1rem;
+}
+
+nav>ul>li {
+    list-style: none;
+    margin-left: 3.5rem;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+/* END OF HEADER */
